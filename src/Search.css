@@ -1,0 +1,43 @@
+input[type="text"] {
+  border-radius: 40px;
+  border: 1px solid #a3c0f5;
+  box-shadow: 2px 2px 5px grey;
+  margin: 0px 15px 10px 10px;
+  padding: 0px 1px 1px 15px;
+  font-size: 22px;
+  background-color: white;
+  color: #000000;
+  transition: all 200ms ease;
+  cursor: url("./images/zeroresized2.png"), auto;
+  position: relative;
+  left: 230px;
+  top: -21px;
+}
+
+.magn {
+  width: 30px;
+  position: relative;
+  margin: 15px 0;
+  color: white;
+  right: -100px;
+  top: 2px;
+}
+
+.btnCurrentlocation {
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  position: relative;
+  top: 11px;
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.btnCurrentlocation:hover {
+  cursor: pointer;
+  color: #fac168;
+  transition: all 200ms ease;
+}
