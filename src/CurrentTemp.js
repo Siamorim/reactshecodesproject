@@ -12,13 +12,13 @@ export default function CurrentTemp() {
               22
             </span>
             <span className="units">
-              <a href="#" id="celsius-link" className="active">
+              <span href="#" id="celsius-link" className="active">
                 ºC
-              </a>{" "}
+              </span>{" "}
               |
-              <a href="#" id="fahrenheit-link">
+              <span href="#" id="fahrenheit-link">
                 ºF
-              </a>
+              </span>
             </span>
           </div>
         </div>
