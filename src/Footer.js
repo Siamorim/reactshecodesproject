@@ -4,13 +4,13 @@ import "./Footer.css";
 export default function footer() {
   return (
     <div className="code">
-      <span
+      <a
         href="https://github.com/Siamorim/reactshecodesproject"
         target="_blank"
         rel="noreferrer"
       >
         Open-source code
-      </span>
+      </a>
       <span> by Sílvia Amorim</span>
     </div>
   );
