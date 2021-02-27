@@ -1,35 +1,28 @@
-.description {
-  font-size: 17px;
-  margin: 0px auto;
-  padding: 0px 0px 0px 10px;
-  position: relative;
-  left: -70px;
-  top: 2px;
-}
-
-.temp {
+.Today .temp {
+  font-size: 36px;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 1px;
-  padding: 0px;
   position: relative;
-  left: -58px;
-  top: 4px;
+  top: -35px;
+  left: 45px;
 }
 
-.units {
+.Today .units {
   position: relative;
-  bottom: 8px;
-  left: -58px;
-  font-size: 14px;
+  top: -48px;
+  left: 45px;
 }
 
-.icon {
-  display: block;
-  width: 53px;
-  position: absolute;
-  left: 40px;
-  top: 0px;
+.Today .description {
+  position: relative;
+  top: -38px;
+  font-size: 36px;
+  left: 0px;
+}
+
+.Today .icon {
+  position: relative;
+  left: 15px;
+  top: 58px;
 }
 
 .TempToday .active {
@@ -42,30 +35,11 @@
   color: white;
 }
 
-.realFeel {
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  top: 0px;
-  left: 179px;
-  font-size: 16px;
-  text-align: left;
+.Today li {
+  list-style: none;
 }
 
-.humidity {
+.WeatherConditions {
   position: relative;
-  right: -179px;
-  font-size: 16px;
-  margin: 0px;
-  padding: 0px;
-  text-align: left;
-}
-
-.wind {
-  font-size: 16px;
-  position: relative;
-  right: -560px;
-  margin: 0px;
-  padding: 0px;
-  text-align: left;
+  left: 110px;
 }

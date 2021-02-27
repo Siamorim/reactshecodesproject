@@ -30,26 +30,14 @@ h2,
   font-weight: bold;
 }
 
-.line {
-  background-color: #fac168;
-  border-radius: 20px;
-  width: 660px;
-  position: relative;
-  left: 50px;
-  color: black;
-  border: 1px solid #fac168;
-  padding: 1px 0px 1px 15px;
-  margin: 5px 30px 0px 0px;
-  font-weight: 900;
-}
-
 .title {
   position: relative;
-  left: 235px;
+  left: 250px;
   color: black;
   font-weight: bold;
   display: block;
   font-size: 30px;
+  top: -45px;
 }
 
 .titleSpace {
@@ -72,4 +60,13 @@ h2,
 .Sunn {
   height: 30px;
   width: 30px;
+}
+
+.code {
+  margin: 0px;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Texturina", serif;
+  font-weight: bold;
+  margin-left: 25px;
 }

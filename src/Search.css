@@ -23,6 +23,12 @@ input[type="text"] {
   top: -1px;
 }
 
+.magn:hover {
+  cursor: pointer;
+  color: #fac168;
+  transition: all 200ms ease;
+}
+
 .btnCurrentlocation {
   text-align: center;
   border: none;

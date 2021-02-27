@@ -1,10 +1,8 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./Weatherapp.css";
 import Header from "./Header.js";
 import Search from "./Search.js";
 import CurrentTemp from "./CurrentTemp.js";
-import Footer from "./Footer.js";
 
 export default function Weatherapp() {
   return (
@@ -20,7 +18,16 @@ export default function Weatherapp() {
           </div>
           <div className="row NextDays" id="forecast"></div>
         </div>
-        <Footer />
+        <div className="code">
+          <a
+            href="https://github.com/Siamorim/reactshecodesproject"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source code
+          </a>
+          <span> by Sílvia Amorim</span>
+        </div>
       </div>
     </body>
   );

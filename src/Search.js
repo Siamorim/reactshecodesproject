@@ -11,6 +11,7 @@ export default function Search() {
         className="city"
         id="cityInput"
         autocomplete="off"
+        autoFocus="on"
       />
       <button
         type="button"
