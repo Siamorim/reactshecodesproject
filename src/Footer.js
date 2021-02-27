@@ -5,7 +5,7 @@ export default function footer() {
   return (
     <div className="code">
       <a
-        href="https://github.com/Siamorim/Final-project"
+        href="https://github.com/Siamorim/reactshecodesproject"
         target="_blank"
         rel="noreferrer"
       >

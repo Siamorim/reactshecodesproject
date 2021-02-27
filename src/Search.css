@@ -10,8 +10,8 @@ input[type="text"] {
   transition: all 200ms ease;
   cursor: url("./images/zeroresized2.png"), auto;
   position: relative;
-  left: 230px;
-  top: -21px;
+  left: 220px;
+  top: -25px;
 }
 
 .magn {
@@ -19,16 +19,15 @@ input[type="text"] {
   position: relative;
   margin: 15px 0;
   color: white;
-  right: -100px;
-  top: 2px;
+  right: -91px;
+  top: -1px;
 }
 
 .btnCurrentlocation {
   text-align: center;
-  border-radius: 40px;
   border: none;
   position: relative;
-  top: 11px;
+  top: 7px;
   background-color: black;
   color: white;
   text-decoration: underline;

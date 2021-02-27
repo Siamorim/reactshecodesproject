@@ -1,4 +1,3 @@
-import "./App.css";
 import Weatherapp from "./Weatherapp.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 

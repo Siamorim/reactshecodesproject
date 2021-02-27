@@ -1,10 +1,8 @@
 .code {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   font-size: 12px;
   font-family: "Texturina", serif;
   font-weight: bold;
-  position: relative;
-  left: 34px;
-  bottom: 1px;
+  margin-left: 25px;
 }
