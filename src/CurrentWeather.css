@@ -1,28 +1,28 @@
 .TempToday .temp {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
   position: relative;
   top: -35px;
-  left: 45px;
+  left: 30px;
 }
 
 .TempToday .units {
   position: relative;
-  top: -48px;
-  left: 45px;
+  top: -58px;
+  left: 30px;
 }
 
 li .text-capitalize {
   position: relative;
-  top: -38px;
-  font-size: 36px;
-  left: -20px;
+  top: -24px;
+  font-size: 28px;
+  left: -36px;
 }
 
-.TempToday .icon {
+.TempToday canvas {
   position: relative;
   left: 15px;
-  top: 58px;
+  top: 20px;
 }
 
 .TempToday .active {

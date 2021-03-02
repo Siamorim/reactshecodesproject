@@ -1,5 +1,6 @@
 import React from "react";
 import "./CurrentWeather.css";
+import WeatherIcon from "./WeatherIcon.js";
 
 export default function CurrentWeather(props) {
   return (
@@ -7,11 +8,9 @@ export default function CurrentWeather(props) {
       <div className="TempToday">
         <div className="row">
           <div className="col-6">
-            <img
-              src={props.info.iconUrl}
-              alt={props.info.description}
-              className="icon"
-            />
+            <div className="float-left">
+              <WeatherIcon imag={props.info.icon} />
+            </div>
             <ul>
               <li>
                 <div className="text-capitalize">{props.info.description}</div>

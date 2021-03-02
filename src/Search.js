@@ -16,7 +16,8 @@ export default function Search(props) {
       wind: response.data.wind.speed,
       feelsLike: response.data.main.feels_like,
       city: response.data.name,
-      iconUrl: response.data.weather[0].icon,
+      //iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
     });
