@@ -21,8 +21,7 @@ h2,
 .units,
 .todayTempMinMax,
 .Today,
-.NextDays,
-.city {
+.NextDays {
   color: white;
 }
 

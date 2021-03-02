@@ -1,4 +1,4 @@
-.Today .temp {
+.TempToday .temp {
   font-size: 36px;
   font-weight: bold;
   position: relative;
@@ -6,20 +6,20 @@
   left: 45px;
 }
 
-.Today .units {
+.TempToday .units {
   position: relative;
   top: -48px;
   left: 45px;
 }
 
-.Today .description {
+li .text-capitalize {
   position: relative;
   top: -38px;
   font-size: 36px;
-  left: 0px;
+  left: -20px;
 }
 
-.Today .icon {
+.TempToday .icon {
   position: relative;
   left: 15px;
   top: 58px;
@@ -35,7 +35,7 @@
   color: white;
 }
 
-.Today li {
+li {
   list-style: none;
 }
 
