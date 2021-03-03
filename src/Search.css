@@ -2,25 +2,25 @@ input[type="text"] {
   border-radius: 40px;
   border: 1px solid #a3c0f5;
   box-shadow: 2px 2px 5px grey;
-  margin: 0px 15px 10px 10px;
   padding: 0px 1px 1px 15px;
   font-size: 22px;
   background-color: white;
   color: #000000;
   transition: all 200ms ease;
   cursor: url("./images/zeroresized2.png"), auto;
-  position: relative;
-  left: 220px;
-  top: -25px;
+  margin-top: 5px;
 }
 
 .magn {
-  width: 30px;
-  position: relative;
-  margin: 15px 0;
+  width: 43px;
   color: white;
-  right: -91px;
-  top: -1px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.magn img {
+  width: 100%;
 }
 
 .magn:hover {
@@ -32,13 +32,11 @@ input[type="text"] {
 .btnCurrentlocation {
   text-align: center;
   border: none;
-  position: relative;
-  top: 7px;
   background-color: black;
   color: white;
   text-decoration: underline;
-  margin: 0px auto;
-  padding: 0px auto;
+  margin: 0px auto 0px;
+  padding: 0px;
 }
 
 .btnCurrentlocation:hover {

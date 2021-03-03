@@ -20,6 +20,7 @@ export default function Search(props) {
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
+      country: response.data.sys.country,
     });
   }
 
@@ -31,7 +32,7 @@ export default function Search(props) {
   }
 
   function handleSubmit(event) {
-    event.preventdefault();
+    event.preventDefault();
     search();
   }
 
@@ -51,7 +52,7 @@ export default function Search(props) {
                   🗺️
                 </span>
                 <span>{weatherData.city}</span>,{" "}
-                <span className="country">PT</span>
+                <span className="country">{weatherData.country}</span>
               </div>
             </div>
             <div className="col-6">
@@ -62,21 +63,22 @@ export default function Search(props) {
           </div>
         </div>
         <div className="Weather">
-          <form onSubmit={handleSubmit}>
-            {" "}
-            <input
-              type="text"
-              placeholder="Enter a city..."
-              className="city"
-              autoComplete="off"
-              autoFocus="on"
-              onChange={handleCityChange}
-            />
+          <form onSubmit={handleSubmit} className="text-center">
+            <div className="SearchMag">
+              <input
+                type="text"
+                placeholder="Enter a city..."
+                className="city"
+                autoComplete="off"
+                autoFocus="on"
+                onChange={handleCityChange}
+              />
+              <button type="submit" className="magn">
+                <img src="whitemag.png" alt="magnifier" />
+              </button>
+            </div>
             <button type="button" className="btnCurrentlocation">
               <em>Current location</em>
-            </button>
-            <button type="submit">
-              <img src="whitemag.png" className="magn" alt="magnifier" />
             </button>
           </form>
           <CurrentWeather info={weatherData} />
