@@ -1,6 +1,7 @@
 import React from "react";
 import "./CurrentWeather.css";
 import WeatherIcon from "./WeatherIcon.js";
+import WeatherUnits from "./WeatherUnits.js";
 
 export default function CurrentWeather(props) {
   return (
@@ -16,18 +17,7 @@ export default function CurrentWeather(props) {
                 <div className="text-capitalize">{props.info.description}</div>
               </li>
               <li>
-                <span className="temp" id="temp">
-                  {Math.round(props.info.temperature)}
-                </span>
-                <span className="units">
-                  <span href="#" id="celsius-link" className="active">
-                    ºC
-                  </span>{" "}
-                  |
-                  <span href="#" id="fahrenheit-link">
-                    ºF
-                  </span>
-                </span>
+                <WeatherUnits celsius={props.info.temperature} />
               </li>
             </ul>
           </div>

@@ -75,13 +75,9 @@ export default function Search(props) {
             <button type="button" className="btnCurrentlocation">
               <em>Current location</em>
             </button>
-            <input
-              type="image"
-              src="whitemag.png"
-              className="magn"
-              value="search"
-              alt="magnifier"
-            />
+            <button type="submit">
+              <img src="whitemag.png" className="magn" alt="magnifier" />
+            </button>
           </form>
           <CurrentWeather info={weatherData} />
         </div>
