@@ -24,11 +24,26 @@ export default function WeatherForecastCalculation(props) {
     return `${temperature}ºC`;
   }
 
-  return (
-    <div className="WeatherForecastCalculation col">
-      {formatDay()}
-      <WeatherIcon imag={props.data.weather[0].icon} />
-      {temperature()}
-    </div>
-  );
+  function fahrenheit() {
+    let temperature = Math.round((props.data.main.temp * 9) / 5 + 32);
+    return `${temperature}°F`;
+  }
+
+  if (props.unit === "celsius") {
+    return (
+      <div className="WeatherForecastCalculation col">
+        {formatDay()}
+        <WeatherIcon imag={props.data.weather[0].icon} />
+        {temperature()}
+      </div>
+    );
+  } else {
+    return (
+      <div className="WeatherForecastCalculation col">
+        {formatDay()}
+        <WeatherIcon imag={props.data.weather[0].icon} />
+        {fahrenheit()}
+      </div>
+    );
+  }
 }
