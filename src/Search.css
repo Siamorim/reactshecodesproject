@@ -29,22 +29,6 @@ input[type="text"] {
   transition: all 200ms ease;
 }
 
-.btnCurrentlocation {
-  text-align: center;
-  border: none;
-  background-color: black;
-  color: white;
-  text-decoration: underline;
-  margin: 0px auto 0px;
-  padding: 0px;
-}
-
-.btnCurrentlocation:hover {
-  cursor: pointer;
-  color: #fac168;
-  transition: all 200ms ease;
-}
-
 .TempToday {
   color: white;
 }
@@ -84,4 +68,20 @@ h1 {
 
 .country {
   font-weight: 1px;
+}
+
+.btnCurrentlocation {
+  text-align: center;
+  border: none;
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+  margin: 0px auto 0px;
+  padding: 0px;
+}
+
+.btnCurrentlocation:hover {
+  cursor: pointer;
+  color: #fac168;
+  transition: all 200ms ease;
 }

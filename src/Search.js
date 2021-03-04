@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Search.css";
 import CurrentWeather from "./CurrentWeather.js";
 import FormattedDate from "./FormattedDate.js";
+import ForecastWeather from "./ForecastWeather.js";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -13,7 +14,7 @@ export default function Search(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      wind: response.data.wind.speed,
+      wind: response.data.wind.speed * 3.6,
       feelsLike: response.data.main.feels_like,
       city: response.data.name,
       //iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -21,6 +22,10 @@ export default function Search(props) {
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
       country: response.data.sys.country,
+      lat: response.data.coord.lat,
+      lon: response.data.coord.lon,
+      maxTemp: response.data.main.temp_max,
+      minTemp: response.data.main.temp_min,
     });
   }
 
@@ -33,11 +38,29 @@ export default function Search(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    if (city.length > 0) {
+      search();
+    } else {
+      alert(`Enter a city, please :)`);
+    }
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
+  }
+
+  function getCurrentLocation(position) {
+    const apiKey = "f6b05703004145fac5fd3f7a96bd1a10";
+    let units = "metric";
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiGeoUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+    axios.get(apiGeoUrl).then(handleResponse);
+  }
+
+  function getGeolocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(getCurrentLocation);
   }
 
   if (weatherData.ready) {
@@ -77,11 +100,16 @@ export default function Search(props) {
                 <img src="whitemag.png" alt="magnifier" />
               </button>
             </div>
-            <button type="button" className="btnCurrentlocation">
+            <button
+              type="button"
+              className="btnCurrentlocation geolocation"
+              onClick={getGeolocation}
+            >
               <em>Current location</em>
             </button>
           </form>
           <CurrentWeather info={weatherData} />
+          <ForecastWeather city={weatherData.city} />
         </div>
       </div>
     );

@@ -6,7 +6,7 @@ export default function Weatherapp() {
   return (
     <div className="containerApp">
       <div className="card">
-        <Search defaultCity="New York" />
+        <Search defaultCity="Lisbon" />
         <div className="title">
           The
           <div className="titleSpace">Weather</div>

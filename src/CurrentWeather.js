@@ -17,7 +17,10 @@ export default function CurrentWeather(props) {
                 <div className="text-capitalize">{props.info.description}</div>
               </li>
               <li>
-                <WeatherUnits celsius={props.info.temperature} />
+                <WeatherUnits
+                  celsius={props.info.temperature}
+                  celsiusFeelsLike={props.info.feelsLike}
+                />
               </li>
             </ul>
           </div>
