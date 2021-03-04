@@ -109,8 +109,8 @@ export default function Search(props) {
               <em>Current location</em>
             </button>
           </form>
-          <CurrentWeather info={weatherData} unit={unit} setUnit={setUnit} />
-          <ForecastWeather city={weatherData.city} unit={unit} />
+          <CurrentWeather info={weatherData} />
+          <ForecastWeather city={weatherData.city} />
         </div>
       </div>
     );
