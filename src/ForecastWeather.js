@@ -6,6 +6,7 @@ import WeatherForecastCalculation from "./WeatherForecastCalculation.js";
 export default function ForecastWeather(props) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
+  const [unit, setUnit] = useState("celsius");
 
   function displayForecast(response) {
     setForecast(response.data);
