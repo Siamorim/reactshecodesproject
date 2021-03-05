@@ -5,15 +5,15 @@ export default function WeatherUnits(props) {
 
   function convertToFahrenheit(event) {
     event.preventDefault();
-    setUnit("fahrenheit");
+    props.setUnit("fahrenheit");
   }
 
   function convertToCelsius(event) {
     event.preventDefault();
-    setUnit("celsius");
+    props.setUnit("celsius");
   }
 
-  if (unit === "celsius") {
+  if (props.unit === "celsius") {
     return (
       <div>
         <span className="temp">{Math.round(props.celsius)} </span>

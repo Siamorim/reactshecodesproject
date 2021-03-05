@@ -25,8 +25,6 @@ export default function Search(props) {
       country: response.data.sys.country,
       lat: response.data.coord.lat,
       lon: response.data.coord.lon,
-      maxTemp: response.data.main.temp_max,
-      minTemp: response.data.main.temp_min,
     });
   }
 
@@ -109,8 +107,13 @@ export default function Search(props) {
               <em>Current location</em>
             </button>
           </form>
-          <CurrentWeather info={weatherData} />
-          <ForecastWeather city={weatherData.city} />
+          <CurrentWeather info={weatherData} unit={unit} setUnit={setUnit} />
+          <ForecastWeather
+            city={weatherData.city}
+            unit={unit}
+            lat={weatherData.lat}
+            lon={weatherData.lon}
+          />
         </div>
       </div>
     );
