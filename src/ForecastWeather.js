@@ -12,11 +12,7 @@ export default function ForecastWeather(props) {
     setLoaded(true);
   }
 
-  if (
-    loaded &&
-    props.lat === forecast.city.coord.lat &&
-    props.lon === forecast.city.coord.lon
-  ) {
+  if (loaded && props.lat === forecast.lat && props.lon === forecast.lon) {
     return (
       <div className="WeatherForecast row">
         <WeatherForecastCalculation data={forecast.list[0]} unit={props.unit} />
@@ -30,7 +26,7 @@ export default function ForecastWeather(props) {
     // return <WeatherForecastCalculation data={forecast.Item} />}}
   } else {
     let apiKey = "f3b0d7fc3c211aec3174c405320dd931";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${props.lat}&lon=${props.lon}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.lat}&lon=${props.lon}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayForecast);
     return null;
   }
