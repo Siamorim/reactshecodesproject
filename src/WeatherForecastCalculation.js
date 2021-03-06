@@ -25,8 +25,8 @@ export default function WeatherForecastCalculation(props) {
     let maxTemp = Math.round(props.data.temp.max);
     return (
       <div>
-        <span className="minTemp">{minTemp}/</span>
-        <span className="maxTemp">{maxTemp}ºC</span>
+        <span className="minTemp">{minTemp}º/</span>
+        <span className="maxTemp">{maxTemp}º</span>
       </div>
     );
   }
@@ -35,8 +35,8 @@ export default function WeatherForecastCalculation(props) {
     let minTemp = Math.round((props.data.temp.min * 9) / 5 + 32);
     let maxTemp = Math.round((props.data.temp.max * 9) / 5 + 32);
     <div>
-      <span className="minTemp">{minTemp}/</span>
-      <span className="maxTemp">{maxTemp}</span>
+      <span className="minTemp">{minTemp}º/</span>
+      <span className="maxTemp">{maxTemp}º</span>
     </div>;
   }
 
