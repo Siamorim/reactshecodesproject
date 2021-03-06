@@ -20,13 +20,25 @@ export default function WeatherForecastCalculation(props) {
   }
 
   function temperature() {
-    let temperature = Math.round(props.data.main.temp);
-    return `${temperature}ºC`;
+    let temperature = Math.round(props.data.temp.day);
+    let minTemp = Math.round(props.data.temp.min);
+    let maxTemp = Math.round(props.data.temp.max);
+    return (
+      <div>
+        <div>{temperature}ºC</div>
+        <span>{minTemp}</span>/<span>{maxTemp}</span>
+      </div>
+    );
   }
 
   function fahrenheit() {
-    let temperature = Math.round((props.data.main.temp * 9) / 5 + 32);
-    return `${temperature}°F`;
+    let temperature = Math.round((props.data.temp.day * 9) / 5 + 32);
+    let minTemp = Math.round((props.data.temp.min * 9) / 5 + 32);
+    let maxTemp = Math.round((props.data.temp.max * 9) / 5 + 32);
+    <div>
+      <div>{temperature}ºF</div>
+      <span>{minTemp}</span>/<span>{maxTemp}</span>
+    </div>;
   }
 
   if (props.unit === "celsius") {
