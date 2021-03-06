@@ -13,14 +13,22 @@ export default function weatherApp() {
         </div>
       </div>
       <footer className="code">
+        <span> Open-source code by Sílvia Amorim, on </span>
         <a
           href="https://github.com/Siamorim/reactshecodesproject"
           target="_blank"
           rel="noreferrer"
         >
-          Open-source code on Github
+          Github
         </a>
-        <span> by Sílvia Amorim</span>
+        <span> and hosted on </span>
+        <a
+          href="https://angry-poincare-168aad.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
       </footer>
     </div>
   );

@@ -3,13 +3,12 @@
   font-weight: bold;
   position: relative;
   top: -30px;
-  left: 30px;
+  left: 13px;
 }
 
 .TempToday .units {
   position: relative;
   top: -52px;
-  left: 30px;
 }
 
 li .text-capitalize {
@@ -21,7 +20,7 @@ li .text-capitalize {
 
 .TempToday canvas {
   position: relative;
-  left: 15px;
+  left: 10px;
   top: 20px;
 }
 

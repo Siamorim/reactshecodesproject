@@ -34,10 +34,12 @@ export default function WeatherForecastCalculation(props) {
   function fahrenheit() {
     let minTemp = Math.round((props.data.temp.min * 9) / 5 + 32);
     let maxTemp = Math.round((props.data.temp.max * 9) / 5 + 32);
-    <div>
-      <span className="minTemp">{minTemp}º/</span>
-      <span className="maxTemp">{maxTemp}º</span>
-    </div>;
+    return (
+      <div>
+        <span className="minTemp">{minTemp}º/</span>
+        <span className="maxTemp">{maxTemp}º</span>
+      </div>
+    );
   }
 
   if (props.unit === "celsius") {
