@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon.js";
+import "./WeatherForecastCalculation.css";
 
 export default function WeatherForecastCalculation(props) {
   function formatDay() {
@@ -26,7 +27,8 @@ export default function WeatherForecastCalculation(props) {
     return (
       <div>
         <div>{temperature}ºC</div>
-        <span>{minTemp}</span>/<span>{maxTemp}ºC</span>
+        <span className="minTemp">{minTemp}/</span>
+        <span className="maxTemp">{maxTemp}ºC</span>
       </div>
     );
   }
@@ -37,7 +39,8 @@ export default function WeatherForecastCalculation(props) {
     let maxTemp = Math.round((props.data.temp.max * 9) / 5 + 32);
     <div>
       <div>{temperature}ºF</div>
-      <span>{minTemp}</span>/<span>{maxTemp}</span>
+      <span className="minTemp">{minTemp}/</span>
+      <span className="maxTemp">{maxTemp}</span>
     </div>;
   }
 
