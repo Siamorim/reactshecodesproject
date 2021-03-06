@@ -26,7 +26,7 @@ export default function WeatherForecastCalculation(props) {
     return (
       <div>
         <div>{temperature}ºC</div>
-        <span>{minTemp}</span>/<span>{maxTemp}</span>
+        <span>{minTemp}</span>/<span>{maxTemp}ºC</span>
       </div>
     );
   }
