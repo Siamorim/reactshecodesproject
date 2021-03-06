@@ -3,3 +3,12 @@
 .dayForecast {
   font-size: 18px;
 }
+
+.minTemp,
+.maxTemp {
+  font-weight: bold;
+}
+
+.dayForecast {
+  font-weight: bold;
+}
