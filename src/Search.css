@@ -63,7 +63,7 @@ h1 {
 
 .todayDay {
   position: relative;
-  right: -41px;
+  right: -74px;
 }
 
 .country {
@@ -76,7 +76,7 @@ h1 {
   background-color: black;
   color: white;
   text-decoration: underline;
-  margin: 0px auto 0px;
+  margin: 2px 12px auto 0px;
   padding: 0px;
 }
 

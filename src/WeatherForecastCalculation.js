@@ -1,7 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon.js";
 import "./WeatherForecastCalculation.css";
-import CurrentWeather from "./CurrentWeather.js";
 
 export default function WeatherForecastCalculation(props) {
   function formatDay() {
@@ -18,7 +17,7 @@ export default function WeatherForecastCalculation(props) {
     //let day = days[date.getDay()];
     //return `${day}`;
     let day = days[date];
-    return day;
+    return <div className="dayForecast"> {day}</div>;
   }
 
   function temperature() {
@@ -46,7 +45,6 @@ export default function WeatherForecastCalculation(props) {
   if (props.unit === "celsius") {
     return (
       <div className="weatherForecastCalculation col">
-        <CurrentWeather info={props.info.feelsLike} />
         {formatDay()}
         <WeatherIcon imag={props.data.weather[0].icon} />
         {temperature()}
@@ -55,7 +53,6 @@ export default function WeatherForecastCalculation(props) {
   } else {
     return (
       <div className="weatherForecastCalculation col">
-        <CurrentWeather info={props.info.feelsLike} />
         {formatDay()}
         <WeatherIcon imag={props.data.weather[0].icon} />
         {fahrenheit()}

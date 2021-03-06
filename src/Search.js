@@ -73,8 +73,8 @@ export default function Search(props) {
                 <span role="img" aria-label="world">
                   🗺️
                 </span>
-                <span>{weatherData.city}</span>,{" "}
-                <span className="country">{weatherData.country}</span>
+                <span> Hi, {weatherData.city}</span>{" "}
+                <span className="country">({weatherData.country})!</span>
               </div>
             </div>
             <div className="col-6">
