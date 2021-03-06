@@ -31,7 +31,7 @@ export default function WeatherForecastCalculation(props) {
 
   if (props.unit === "celsius") {
     return (
-      <div className="WeatherForecastCalculation col">
+      <div className="weatherForecastCalculation col">
         {formatDay()}
         <WeatherIcon imag={props.data.weather[0].icon} />
         {temperature()}
@@ -39,7 +39,7 @@ export default function WeatherForecastCalculation(props) {
     );
   } else {
     return (
-      <div className="WeatherForecastCalculation col">
+      <div className="weatherForecastCalculation col">
         {formatDay()}
         <WeatherIcon imag={props.data.weather[0].icon} />
         {fahrenheit()}

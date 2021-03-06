@@ -1,9 +1,9 @@
-import Weatherapp from "./Weatherapp.js";
+import WeatherApp from "./WeatherApp.js";
 
 export default function App() {
   return (
     <div className="App">
-      <Weatherapp />
+      <WeatherApp />
     </div>
   );
 }

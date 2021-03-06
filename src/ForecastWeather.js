@@ -12,7 +12,11 @@ export default function ForecastWeather(props) {
     setLoaded(true);
   }
 
-  if (loaded && props.lat === forecast.lat && props.lon === forecast.lon) {
+  if (
+    loaded &&
+    props.lat === forecast.city.coord.lat &&
+    props.lon === forecast.city.coord.lon
+  ) {
     return (
       <div className="WeatherForecast row">
         <WeatherForecastCalculation data={forecast.list[0]} unit={props.unit} />

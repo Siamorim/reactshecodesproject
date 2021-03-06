@@ -1,8 +1,8 @@
 import React from "react";
-import "./Weatherapp.css";
+import "./WeatherApp.css";
 import Search from "./Search.js";
 
-export default function Weatherapp() {
+export default function weatherApp() {
   return (
     <div className="containerApp">
       <div className="card">
