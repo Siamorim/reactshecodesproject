@@ -29,7 +29,7 @@ export default function ForecastWeather(props) {
     // {forecast.list.slice(0,5).map(function(forecastItem) {
     // return <WeatherForecastCalculation data={forecast.Item} />}}
   } else {
-    let apiKey = "f6b05703004145fac5fd3f7a96bd1a10";
+    let apiKey = "f3b0d7fc3c211aec3174c405320dd931";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${props.lat}&lon=${props.lon}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayForecast);
     return null;
