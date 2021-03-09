@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.7.3",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "classlist.js": "^1.1.20150312",
     "font-awesome": "^4.7.0",
     "react": "^17.0.1",
     "react-animated-weather": "^4.0.1",

@@ -1,7 +1,7 @@
 .containerApp {
   font-family: "Texturina", serif;
   max-width: 740px;
-  min-width: 740px;
+  min-width: 576px;
   margin: 10px auto;
 }
 
