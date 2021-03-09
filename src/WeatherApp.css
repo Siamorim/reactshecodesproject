@@ -31,34 +31,17 @@ h2,
 
 .title {
   position: relative;
-  left: 250px;
+  left: 125px;
   color: black;
   font-weight: bold;
   display: block;
   font-size: 30px;
-  top: -230px;
+  top: -315px;
 }
 
 .titleSpace {
   line-height: 0.4cm;
   text-indent: -0.8cm;
-}
-
-.NextDays {
-  padding-top: 200px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  text-align: left;
-}
-
-.col {
-  padding: 0;
-  text-align: center;
-}
-
-.Sunn {
-  height: 30px;
-  width: 30px;
 }
 
 .code {
