@@ -1,15 +1,16 @@
 .TempToday .temp {
-  font-size: 42px;
-  font-weight: bold;
-  position: relative;
-  top: -22px;
-  left: 18px;
+  font-size: 46px;
+  line-height: 42px;
+  margin-left: 10px;
+  font-weight: 400;
 }
 
 .TempToday .units {
+  font-size: 16px;
+  line-height: 1px;
+  font-weight: 400;
   position: relative;
-  top: -40px;
-  left: 14px;
+  top: -20px;
 }
 
 li .text-capitalize {
@@ -23,16 +24,6 @@ li .text-capitalize {
   position: relative;
   left: 10px;
   top: 20px;
-}
-
-.TempToday .active {
-  color: white;
-  cursor: default;
-}
-
-.TempToday .active:hover {
-  text-decoration: none;
-  color: white;
 }
 
 li {
