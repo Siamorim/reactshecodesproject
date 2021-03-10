@@ -1,7 +1,7 @@
 .containerApp {
   font-family: "Texturina", serif;
-  max-width: 740px;
-  min-width: 740px;
+  max-width: 730px;
+  min-width: 730px;
   margin: 10px auto;
 }
 
@@ -36,7 +36,7 @@ h2,
   font-weight: bold;
   display: block;
   font-size: 30px;
-  top: -230px;
+  top: -210px;
 }
 
 .titleSpace {
