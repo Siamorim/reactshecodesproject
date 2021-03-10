@@ -16,7 +16,8 @@
 .TempToday canvas {
   position: relative;
   left: 10px;
-  top: 24px;
+  top: 22px;
+  margin: 10px auto;
 }
 
 li .text-capitalize {
@@ -24,6 +25,7 @@ li .text-capitalize {
   top: -12px;
   font-size: 24px;
   left: -48px;
+  margin-left: 20px;
 }
 
 li {
