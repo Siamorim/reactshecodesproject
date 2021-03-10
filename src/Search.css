@@ -1,7 +1,7 @@
 input[type="text"] {
   border-radius: 40px;
   border: 1px solid black;
-  padding: 0px 1px 1px 15px;
+  padding: 0px 0.5px 0.5px 10px;
   font-size: 22px;
   background-color: white;
   color: #000000;
@@ -11,7 +11,7 @@ input[type="text"] {
 }
 
 .magn {
-  width: 43px;
+  width: 42px;
   color: white;
   background: transparent;
   border: 0;
